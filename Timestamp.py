@@ -10,12 +10,6 @@ st.set_page_config(
 
 st.title('📚 Timestamp')
 
-# Custom css
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-local_css("/Users/jb/streamlit/Toolkit/static/custom.css")
-
 # Initialize session state for logs
 if 'logs' not in st.session_state:
     st.session_state.logs = []
